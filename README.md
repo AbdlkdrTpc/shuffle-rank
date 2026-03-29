@@ -8,6 +8,9 @@ Sosyal medya icin tarayici tabanli siralama videosu olusturucu. Ogelerinizi ekle
 
 **[https://abdlkdrtpc.github.io/shuffle-rank/](https://abdlkdrtpc.github.io/shuffle-rank/)**
 
+<!-- Screenshot eklemek icin: screenshots/ klasorune gorsel ekleyin ve asagidaki yorumu guncelleyin -->
+<!-- ![Shuffle & Rank Screenshot](screenshots/demo.png) -->
+
 ## Features / Ozellikler
 
 - **Shuffle & Rank** — Add up to 10 items, shuffle and place them into ranking slots / 10'a kadar oge ekleyin, karistirin ve siralama slotlarina yerlestirin
