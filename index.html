@@ -853,7 +853,7 @@ html, body {
 
 .record-mode .rank-strip { width: 180px; gap: 4px; }
 .record-mode .rank-slot {
-  grid-template-columns: 22px auto 1fr;
+  grid-template-columns: 22px 48px 1fr;
   gap: 2px 6px;
   padding: 2px 6px;
   align-items: center;
@@ -862,10 +862,11 @@ html, body {
   font-size: 14px;
 }
 .record-mode .rank-slot__thumb {
-  height: calc(100% - 4px);
-  aspect-ratio: 1;
-  width: auto;
+  width: 48px;
+  height: 48px;
   border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .record-mode .rank-slot__name {
   font-size: 10px;
@@ -961,13 +962,13 @@ html, body {
 }
 
 .record-mode .v-body.final-reveal .rank-slot {
-  grid-template-columns: 36px auto 1fr;
+  grid-template-columns: 36px 56px 1fr;
   gap: 4px 12px;
   padding: 4px 16px;
 }
 
 .record-mode .v-body.final-reveal .rank-slot__number { font-size: 20px; }
-.record-mode .v-body.final-reveal .rank-slot__thumb { height: calc(100% - 8px); aspect-ratio: 1; width: auto; max-height: none; border-radius: 12px; }
+.record-mode .v-body.final-reveal .rank-slot__thumb { width: 56px; height: 56px; border-radius: 12px; overflow: hidden; }
 .record-mode .v-body.final-reveal .rank-slot__name { font-size: 13px; }
 
 /* Ambient glow */
