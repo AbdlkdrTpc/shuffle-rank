@@ -8,8 +8,14 @@ Sosyal medya icin tarayici tabanli siralama videosu olusturucu. Ogelerinizi ekle
 
 **[https://abdlkdrtpc.github.io/shuffle-rank/](https://abdlkdrtpc.github.io/shuffle-rank/)**
 
-<!-- Screenshot eklemek icin: screenshots/ klasorune gorsel ekleyin ve asagidaki yorumu guncelleyin -->
-<!-- ![Shuffle & Rank Screenshot](screenshots/demo.png) -->
+### Setup / Kurulum
+![Setup](screenshots/02-items-ready.png)
+
+### Card Reveal / Kart Acilisi
+![Card Reveal](screenshots/03-card-revealed.png)
+
+### Final Ranking / Sonuc
+![Final Ranking](screenshots/04-final-ranking.png)
 
 ## Features / Ozellikler
 
