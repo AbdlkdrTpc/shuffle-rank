@@ -355,6 +355,7 @@ html, body {
   resize: none;
   line-height: 1.25;
   overflow: hidden;
+  min-height: 28px;
 }
 
 .v-header__title::placeholder { color: rgba(255,255,255,0.25); }
@@ -881,7 +882,7 @@ html, body {
 .record-mode .card__name { font-size: 15px; }
 .record-mode .shuffle-placeholder { width: 200px; height: 270px; border-radius: 18px; font-size: 11px; }
 .record-mode .v-header__title-wrap { padding: 18px 22px 16px; }
-.record-mode .v-header__title { font-size: 26px; height: auto !important; }
+.record-mode .v-header__title { font-size: 26px; height: auto !important; overflow: visible; }
 .record-mode .v-header__counter { font-size: 13px; }
 
 /* Select prompt — pulsing arrow */
@@ -1315,7 +1316,7 @@ html, body {
       <header class="v-header">
         <div class="v-header__title-wrap" id="titleWrap">
           <input type="text" class="v-header__counter" id="headerCounter" value="#1">
-          <textarea class="v-header__title" id="topicTitle" rows="1" placeholder="Konu basligi yaz...">En Iyi Film Karakterleri</textarea>
+          <textarea class="v-header__title" id="topicTitle" placeholder="Konu basligi yaz...">En Iyi Film Karakterleri</textarea>
         </div>
       </header>
 
@@ -3522,10 +3523,12 @@ $('btnRecord').addEventListener('click', function() {
     document.body.classList.add('record-mode');
     document.body.classList.add('hide-cursor');
     this.textContent = 'Duzenle Modu';
+    requestAnimationFrame(function() { autoResize(titleEl); });
   } else {
     document.body.classList.remove('record-mode');
     document.body.classList.remove('hide-cursor');
     this.textContent = 'Kayit Modu';
+    requestAnimationFrame(function() { autoResize(titleEl); });
     if (typeof Recorder !== 'undefined' && Recorder.isRecording) {
       Recorder.stop();
     }
